@@ -8,16 +8,10 @@ To check
 sudo dnf install alacritty sway waybar mako light pavucontrol swaylock swaybg wl-clipboard libxcb xcb-util-devel xkbcomp-devel libxkbcommon-x11-devel xcb-util-wm-devel xcb-util-cursor-devel aclocal automake bison flex startup-notification-devel wayland-protocols-devel check-devel xkeyboard-config-devel network-manager-applet blueman pactl pipewire-utils pulseaudio-utils wdisplays flameshot xdg-desktop-portal xdg-desktop-portal-devel grim pipewire-devel
 ```
 
-## Alacritty
-
-```
-ln -s alacritty ~/.config/alacritty
-```
-
 ## Sway
 
 ```
-ln -s sway ~/.config/sway
+ln -s $PWD/sway ~/.config/sway
 ```
 
 ## Rofi
@@ -26,23 +20,23 @@ Use the [Wayland fork](https://github.com/lbonn/rofi.git) and install [Rofi Powe
 
 
 ```
-ln -s rofi ~/.config/rofi
+ln -s $PWD/rofi ~/.config/rofi
 ```
 
 ## Waybar
 
 ```
-ln -s waybar ~/.config/waybar
+ln -s $PWD/waybar ~/.config/waybar
 ```
 
 ## Alacritty
 
 ```
-ln -s alacritty ~/.config/alacritty
+ln -s $PWD/alacritty ~/.config/alacritty
 ```
 
 ### Flameshot
 
 ```
-ln -s flameshot ~/.config/flameshot
+ln -s $PWD/flameshot ~/.config/flameshot
 ```
