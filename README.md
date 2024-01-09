@@ -40,3 +40,11 @@ ln -s $PWD/alacritty ~/.config/alacritty
 ```
 ln -s $PWD/flameshot ~/.config/flameshot
 ```
+
+### Zsh
+
+Install [oh-my-zsh](https://ohmyz.sh/#install) and [powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+
+```
+ln -s $PWD/zshrc.sh ~/.zshrc
+```
