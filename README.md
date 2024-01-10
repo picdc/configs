@@ -5,10 +5,12 @@
 To check
 
 ```
-sudo dnf install alacritty sway waybar mako light pavucontrol swaylock swaybg wl-clipboard libxcb xcb-util-devel xkbcomp-devel libxkbcommon-x11-devel xcb-util-wm-devel xcb-util-cursor-devel aclocal automake bison flex startup-notification-devel wayland-protocols-devel check-devel xkeyboard-config-devel network-manager-applet blueman pactl pipewire-utils pulseaudio-utils wdisplays flameshot xdg-desktop-portal xdg-desktop-portal-devel grim pipewire-devel
+sudo dnf install alacritty sway waybar mako light pavucontrol swaylock swaybg wl-clipboard libxcb xcb-util-devel xkbcomp-devel libxkbcommon-x11-devel xcb-util-wm-devel xcb-util-cursor-devel aclocal automake bison flex startup-notification-devel wayland-protocols-devel check-devel xkeyboard-config-devel network-manager-applet blueman pactl pipewire-utils pulseaudio-utils wdisplays flameshot xdg-desktop-portal xdg-desktop-portal-devel grim pipewire-devel libappindicator-gtk3-devel
 ```
 
 ## Sway
+
+Install [runcat](https://github.com/lthms/runcat-tray) (don't forget to put the binary in the path)
 
 ```
 ln -s $PWD/sway ~/.config/sway

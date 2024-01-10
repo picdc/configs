@@ -272,6 +272,7 @@ hide_edge_borders both
 
 exec_always nm-applet --indicator
 exec_always blueman-applet
+exec_always runcat
 exec mako
 
 exec swayidle timeout 30 "makoctl set-mode away" resume "makoctl set-mode default"
