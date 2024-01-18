@@ -270,6 +270,8 @@ default_border pixel
 set $borderwidth 5
 hide_edge_borders both
 
+focus_follows_mouse no
+
 exec_always nm-applet --indicator
 exec_always blueman-applet
 exec_always runcat
