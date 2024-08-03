@@ -139,8 +139,8 @@ output eDP-1 mode 1920x1200
     bindsym $mod+quotedbl workspace 3
     bindsym $mod+apostrophe workspace 4
     bindsym $mod+parenleft workspace 5
-    bindsym $mod+egrave workspace 6
-    bindsym $mod+minus workspace 7
+    bindsym $mod+minus workspace 6
+    bindsym $mod+egrave workspace 7
     bindsym $mod+underscore workspace 8
     bindsym $mod+ccedilla workspace 9
     bindsym $mod+agrave workspace 10
@@ -264,11 +264,12 @@ bar swaybar_command waybar
 # Borders
 gaps inner 4
 gaps outer 4
-smart_gaps on
+smart_gaps off
 default_border pixel
-#smart_borders on
-set $borderwidth 5
-hide_edge_borders both
+smart_borders off
+set $borderwidth 2
+default_border pixel $borderwidth
+#hide_edge_borders both
 
 focus_follows_mouse no
 

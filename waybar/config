@@ -10,7 +10,7 @@
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
-        "format": "{icon}",
+        "format": "{name}",
         "format-icons": {
             "1:web": "",
             "2:code": "",
@@ -74,11 +74,16 @@
         "on-click": "pavucontrol"
     },
     "custom/spotify": {
-        "format": " {}",
+        "format": "{icon} {}",
+        "return-type": "json",
         "max-length": 40,
-        "interval": 30, // Remove this if your script is endless and write in loop
-        "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
-        "exec-if": "pgrep spotify"
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /tmp/spotify" // Filter player based on name
     },
     "custom/power": {
         "format" : "⏻",
