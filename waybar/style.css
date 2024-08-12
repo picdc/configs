@@ -33,9 +33,19 @@ window#waybar {
     border-top: 2px solid #c9545d;
 }
 
+#workspaces button.active {
+    color: #c9545d;
+    border-top: 2px solid #c9545d;
+}
+
 #mode {
     background: #64727D;
-    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+
+#submap {
+    background: #64727D;
+    border-top: 3px solid white;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode, #custom-power {

@@ -4,7 +4,7 @@
     "height": 24, // Waybar height
     // "width": 1366, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
+    "modules-left": ["sway/workspaces", "hyprland/workspaces", "sway/mode", "hyprland/submap", "custom/spotify"],
     "modules-center": ["sway/window"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock", "custom/power"],
     "sway/workspaces": {
@@ -22,8 +22,26 @@
             "focused": "",
             "default": ""
         }
+    },"hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}",
+        "format-icons": {
+            "1:web": "",
+            "2:code": "",
+            "3:term": "",
+            "4:work": "",
+            "5:music": "",
+            "6:docs": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
     },
     "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "tray": {
