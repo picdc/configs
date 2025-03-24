@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,3 +126,17 @@ alias ls="eza"
 alias eth-tezt='dune exec etherlink/tezt/tests/main.exe --'
 
 PATH=$PATH:$HOME/bin/
+
+# Created by `pipx` on 2024-10-14 14:23:47
+export PATH="$PATH:/home/picdc/.local/bin"
+
+# bun completions
+[ -s "/home/picdc/.bun/_bun" ] && source "/home/picdc/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
