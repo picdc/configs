@@ -103,8 +103,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvmbash_completion
 
-export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-
 alias grep="rg"
 alias ls="eza"
 alias eth-tezt='dune exec etherlink/tezt/tests/main.exe --'
