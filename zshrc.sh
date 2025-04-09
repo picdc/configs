@@ -99,9 +99,10 @@ export FZF_BASE=/usr/share/fzf
 # opam configuration
 [[ ! -r /home/picdc/.opam/opam-init/init.zsh ]] || source /home/picdc/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvmbash_completion
+source /usr/share/nvm/init-nvm.sh
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvmbash_completion
 
 alias grep="rg"
 alias ls="eza"
