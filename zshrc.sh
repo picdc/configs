@@ -125,3 +125,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/picdc/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/home/picdc/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/picdc/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/picdc/tools/google-cloud-sdk/completion.zsh.inc'; fi

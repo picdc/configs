@@ -188,8 +188,8 @@
     },
 
 "custom/spotify": {
-    "exec": "~/.config/waybar/mediaplayer.py --player spotify",
-    "format": "{}  ",
+    "exec": "~/.config/waybar/mediaplayer.py --player deezer",
+    "format": "{}  💜",
     "return-type": "json",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
@@ -201,12 +201,12 @@
         "return-type": "json",
         "max-length": 40,
         "format-icons": {
-            "spotify": "",
+            "spotify": "💜",
             "default": "🎜"
         },
         "escape": true,
         //"exec": "~/.config/waybar/mediaplayer.py" // Script in resources folder
-        // "exec": "~/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        // "exec": "~/.config/waybar/mediaplayer.py --player deezer 2> /dev/null" // Filter player based on name
     },
 
     "custom/power": {
