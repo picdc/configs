@@ -104,9 +104,9 @@ source /usr/share/nvm/init-nvm.sh
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvmbash_completion
 
-alias grep="rg"
-alias ls="eza"
-alias eth-tezt='dune exec etherlink/tezt/tests/main.exe --'
+# alias grep="rg"
+# alias ls="eza"
+# alias eth-tezt='dune exec etherlink/tezt/tests/main.exe --'
 
 PATH=$PATH:$HOME/bin/
 
@@ -131,3 +131,6 @@ if [ -f '/home/picdc/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/home/picdc
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/picdc/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/picdc/tools/google-cloud-sdk/completion.zsh.inc'; fi
+
+# opencode
+export PATH=/home/picdc/.opencode/bin:$PATH
